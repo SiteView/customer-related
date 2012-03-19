@@ -1,0 +1,13 @@
+
+AlterSerMsgWithWMS.dll
+
+通过run()函数去获取告警模板的信息放在content里。
+对conten的解析来获取调用的接口的函数参数，并调用接口函数来发送解析的告警信息到对方平台。
+int run(char * source, char * destination, char * content)
+
+测试：
+1.将AlterSerMsgWithWMS.dll放在SiteView\WebECC\smsplugin目录中
+
+2.在ECC的设置->短信设置->调用动态库中的函数发送短信->添加AlterSerMsgWithWMS.dll
+
+测试结果：在C:盘创建dySMS.log文件并写入content内容。
