@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Branding
+Bundle-SymbolicName: gw.branding;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: gw.branding.Activator
+Require-Bundle: org.eclipse.rap.ui,
+ org.eclipse.core.runtime,
+ Siteview.Forms.Common;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

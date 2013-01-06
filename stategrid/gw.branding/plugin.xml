@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="Siteview.Forms.Common.BrandExtension">
+      <branding
+            CompanyName="国家电网"
+            DialogLogo="img/Images.Application.svlogo.png"
+            MessageBoxCaption="国网三线运维管理系统"
+            ProductName="国网三线运维管理系统"
+            logo="img/menu_l.png">
+      </branding>
+   </extension>
+
+</plugin>
