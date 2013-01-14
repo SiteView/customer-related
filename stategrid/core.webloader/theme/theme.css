@@ -1,0 +1,149 @@
+Display, Shell, Sash, Composite, Table,Menu,ToolBar,Tree,Label,CLabel,
+CTableFolder,Group,Link,List,ScrollBar,Slider,Scale,ProgressBar,Composite[BORDER],
+Shell[BORDER] ,Shell[TITLE] 
+{
+	background-color: #f0f3f9;
+}
+
+Shell,Shell[TITLE] 
+{
+	border: 0px solid #0983D6;
+}
+Shell-Titlebar
+{
+	background-image: gradient(
+	    linear, left top, left bottom,
+	    from( #229EC7),
+	    color-stop( 48%, #22AEC7),
+	    color-stop( 52%, #22AEC7 ),
+	    to( #229EC7)
+ 	 );
+}
+
+ProgressBar-Indicator
+{
+	background-color :#0983D6;
+}
+
+Button[CHECK],Button[RADIO]
+{
+	background-color: #f0f3f9;
+}
+
+Button[PUSH], Button[TOGGLE],Button-FocusIndicator[PUSH]  {
+    color: #000000;
+    border: 1px solid #D7A52A;
+	background-image: gradient(
+	    linear, left top, left bottom,
+	    from( #D7A52A),
+	    color-stop( 48%, #E7C743 ),
+	    color-stop( 52%, #E7D743),
+	    to( #D7A52A)
+ 	 );
+  }
+  
+ Button[PUSH]:default{
+    color: #000000;
+    border: 1px solid #D7A52A;
+	background-image: gradient(
+	    linear, left top, left bottom,
+	    from( #D7A52A),
+	    color-stop( 48%, #E7C743 ),
+	    color-stop( 52%, #E7D743),
+	    to( #D7A52A)
+ 	 );
+ }
+  
+Button[PUSH]:hover, Button[TOGGLE]:hover{
+    color: #000000;
+    border: 1px solid #D7A52A;
+	background-image: gradient(
+	    linear, left top, left bottom,
+	    from( #D7A52A),
+	    color-stop( 48%, #E7D743 ),
+	    color-stop( 52%, #E7E743),
+	    to( #D7A52A)
+ 	 );
+  }
+  
+Button[PUSH]:selected, Button[TOGGLE]:selected{
+    color: #000000;
+    border: 1px solid #D7A52A;
+	background-image: gradient(
+	    linear, left top, left bottom,
+	    from( #D7A52A),
+	    color-stop( 48%, #E7C743 ),
+	    color-stop( 52%, #E7D743),
+	    to( #D7A52A)
+ 	 );
+  }
+  
+  Button[PUSH]:disabled , Button[TOGGLE]:disabled {
+   /*border: 2px solid blue;*/
+    color: #ffffff;
+    border: 1px solid #ababab;
+    background-color: #00f9f9;
+	background-image: gradient(
+	    linear, left top, left bottom,
+	    from( #cccccc),
+	    color-stop( 48%, #ababab),
+	    color-stop( 52%, #bcbcbc),
+	    to( #cccccc)
+ 	 );
+  }
+
+
+
+ExpandBar{
+}
+ExpandItem-Header{
+	background-color:#0022f9;
+}
+
+TabItem{
+	background-color:#f6f3f9;
+}
+
+Spinner{
+	background-color: #f0f3f9;
+}
+
+CCombo:disabled{
+	color:#747474;
+}
+
+Combo:disabled{
+	color:#747474;
+}
+
+Text:disabled{
+	color:#747474;
+}
+
+DateTime:disabled{
+	color:#747474;
+}
+
+DateTime-Field:disabled{
+	color:#747474;
+}
+
+
+TableColumn{
+	background-image:url("/html/tablecolumn-bg.png");
+}
+TableColumn:hover{
+	background-image:url("/html/tablecolumn-bg-hover.png");
+}
+
+TableColumn-SortIndicator:down{
+	background-image:url("html/sort_desc_alt.png");
+}
+
+TableColumn-SortIndicator:up{
+	background-image:url("html/sort_asc.png");
+}
+
+ToolTip{
+	background-color: #f0f3f9;
+}

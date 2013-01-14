@@ -5,9 +5,10 @@
          point="Siteview.Forms.Common.BrandExtension">
       <branding
             CompanyName="国家电网"
+            DefaultIcon="img/gwlogo.png"
             DialogLogo="img/Images.Application.svlogo.png"
-            MessageBoxCaption="国网三线运维管理系统"
-            ProductName="国网三线运维管理系统"
+            MessageBoxCaption="国网三线技术支持系统"
+            ProductName="国网三线技术支持系统"
             logo="img/menu_l.png">
       </branding>
    </extension>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+ 
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="ITSM"
+            class="core.apploader.Perspective"
+            id="core.apploader.perspective">
+      </perspective>
+   </extension>
+	   
+
+
+ <extension
+       point="org.eclipse.ui.views">
+    <view
+          class="core.apploader.views.NavigatorView"
+          id="core.apploader.views.NavigatorView"
+          name="导航器">
+    </view>
+    <view
+          class="core.apploader.views.DashboardView"
+          id="core.apploader.views.DashboardView"
+          name="Dashboard">
+    </view>
+    <view
+           class="core.apploader.views.ServiceCatelogView"
+           id="core.apploader.views.ServiceCatelogView"
+           name="服务目录">
+    </view>
+    <view
+          class="core.apploader.views.ObjectTreeView"
+          id="core.apploader.views.ObjectTreeView"
+          name="对象浏览器">
+    </view>
+ </extension>
+ <extension
+       point="org.eclipse.ui.editors">
+    <editor
+          class="core.apploader.editors.ServiceCatelogEditor"
+          id="core.apploader.editors.ServiceCatelogEditor"
+          name="热门服务">
+    </editor>
+ </extension>
+
+ 
+
+</plugin>

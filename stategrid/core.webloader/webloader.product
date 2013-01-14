@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="ITSM" uid="core.webloader" id="core.webloader.product" application="org.eclipse.ui.ide.workbench" version="1.0" useFeatures="false" includeLaunchers="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-consoleLog -console</programArgs>
+      <vmArgs>-Declipse.ignoreApp=true -Dosgi.noShutdown=true</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+
+   <launcher name="webloader">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+      <plugin id="Core.AutoTasks"/>
+      <plugin id="Core.lib"/>
+      <plugin id="Siteview.Forms.Common"/>
+      <plugin id="Siteview.Web.Forms"/>
+      <plugin id="Siteview.lib"/>
+      <plugin id="com.ibm.icu.base"/>
+      <plugin id="core.autotasks.rap"/>
+      <plugin id="core.businessprocess"/>
+      <plugin id="core.busobmaint"/>
+      <plugin id="core.dashboards"/>
+      <plugin id="core.dashboards.rap"/>
+      <plugin id="core.print.rap"/>
+      <plugin id="core.reporting"/>
+      <plugin id="core.reporting.rap"/>
+      <plugin id="core.search"/>
+      <plugin id="core.search.form"/>
+      <plugin id="core.ui"/>
+      <plugin id="core.webloader"/>
+      <plugin id="javax.servlet"/>
+      <plugin id="org.apache.felix.gogo.command"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.felix.gogo.shell"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.console"/>
+      <plugin id="org.eclipse.equinox.http.jetty"/>
+      <plugin id="org.eclipse.equinox.http.registry"/>
+      <plugin id="org.eclipse.equinox.http.servlet"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.servletbridge.extensionbundle" fragment="true"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jetty.continuation"/>
+      <plugin id="org.eclipse.jetty.http"/>
+      <plugin id="org.eclipse.jetty.io"/>
+      <plugin id="org.eclipse.jetty.security"/>
+      <plugin id="org.eclipse.jetty.server"/>
+      <plugin id="org.eclipse.jetty.servlet"/>
+      <plugin id="org.eclipse.jetty.util"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.rap.jface"/>
+      <plugin id="org.eclipse.rap.jface.databinding"/>
+      <plugin id="org.eclipse.rap.jface.databinding.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.jface.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.rwt"/>
+      <plugin id="org.eclipse.rap.rwt.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.rwt.osgi"/>
+      <plugin id="org.eclipse.rap.rwt.supplemental.filedialog"/>
+      <plugin id="org.eclipse.rap.rwt.supplemental.fileupload"/>
+      <plugin id="org.eclipse.rap.ui"/>
+      <plugin id="org.eclipse.rap.ui.cheatsheets"/>
+      <plugin id="org.eclipse.rap.ui.cheatsheets.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.ui.forms"/>
+      <plugin id="org.eclipse.rap.ui.forms.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.ui.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.ui.workbench"/>
+      <plugin id="org.eclipse.rap.ui.workbench.nl_zh" fragment="true"/>
+   </plugins>
+
+   <configurations>
+      <property name="eclipse.ignoreApp" value="true" />
+      <property name="org.osgi.service.http.port" value="7070" />
+      <property name="osgi.noShutdown" value="true" />
+   </configurations>
+
+</product>

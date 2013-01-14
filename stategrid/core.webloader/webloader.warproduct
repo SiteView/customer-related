@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="webloader" uid="webloader" version="1.0" useFeatures="false" includeLaunchers="false">
+   <plugins>
+      <plugin id="Core.AutoTasks"/>
+      <plugin id="Core.lib"/>
+      <plugin id="Siteview.Forms.Common"/>
+      <plugin id="Siteview.Web.Forms"/>
+      <plugin id="Siteview.lib"/>
+      <plugin id="com.ibm.icu.base"/>
+      <plugin id="core.autotasks.rap"/>
+      <plugin id="core.boservlet"/>
+      <plugin id="core.businessprocess"/>
+      <plugin id="core.busobmaint"/>
+      <plugin id="core.dashboards"/>
+      <plugin id="core.dashboards.rap"/>
+      <plugin id="core.discoveryJob"/>
+      <plugin id="core.print.rap"/>
+      <plugin id="core.reporting"/>
+      <plugin id="core.reporting.rap"/>
+      <plugin id="core.schedulelib"/>
+      <plugin id="core.scheduleservice"/>
+      <plugin id="core.search"/>
+      <plugin id="core.search.form"/>
+      <plugin id="core.service"/>
+      <plugin id="core.treebrowser"/>
+      <plugin id="core.ui"/>
+      <plugin id="core.webloader"/>
+      <plugin id="core.webservice"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.http.registry"/>
+      <plugin id="org.eclipse.equinox.http.servlet"/>
+      <plugin id="org.eclipse.equinox.http.servletbridge"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.servletbridge"/>
+      <plugin id="org.eclipse.equinox.servletbridge.extensionbundle" fragment="true"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.rap.design.example"/>
+      <plugin id="org.eclipse.rap.design.example.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.draw2d"/>
+      <plugin id="org.eclipse.rap.draw2d.compatibility"/>
+      <plugin id="org.eclipse.rap.gef"/>
+      <plugin id="org.eclipse.rap.jface"/>
+      <plugin id="org.eclipse.rap.jface.databinding"/>
+      <plugin id="org.eclipse.rap.jface.databinding.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.jface.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.rwt"/>
+      <plugin id="org.eclipse.rap.rwt.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.rwt.osgi"/>
+      <plugin id="org.eclipse.rap.rwt.supplemental.filedialog"/>
+      <plugin id="org.eclipse.rap.rwt.supplemental.fileupload"/>
+      <plugin id="org.eclipse.rap.ui"/>
+      <plugin id="org.eclipse.rap.ui.cheatsheets"/>
+      <plugin id="org.eclipse.rap.ui.cheatsheets.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.ui.forms"/>
+      <plugin id="org.eclipse.rap.ui.forms.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.ui.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.ui.views"/>
+      <plugin id="org.eclipse.rap.ui.views.nl_zh" fragment="true"/>
+      <plugin id="org.eclipse.rap.ui.workbench"/>
+      <plugin id="org.eclipse.rap.ui.workbench.nl_zh" fragment="true"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="Core.AutoTasks" autoStart="true" startLevel="0" />
+      <plugin id="Core.lib" autoStart="true" startLevel="0" />
+      <plugin id="Siteview.Forms.Common" autoStart="true" startLevel="0" />
+      <plugin id="Siteview.Web.Forms" autoStart="true" startLevel="0" />
+      <plugin id="Siteview.lib" autoStart="true" startLevel="0" />
+      <plugin id="com.ibm.icu.base" autoStart="true" startLevel="0" />
+      <plugin id="core.autotasks.rap" autoStart="true" startLevel="0" />
+      <plugin id="core.boservlet" autoStart="true" startLevel="0" />
+      <plugin id="core.businessprocess" autoStart="true" startLevel="0" />
+      <plugin id="core.busobmaint" autoStart="true" startLevel="0" />
+      <plugin id="core.dashboards" autoStart="true" startLevel="0" />
+      <plugin id="core.dashboards.rap" autoStart="true" startLevel="0" />
+      <plugin id="core.discoveryJob" autoStart="true" startLevel="0" />
+      <plugin id="core.print.rap" autoStart="true" startLevel="0" />
+      <plugin id="core.reporting" autoStart="true" startLevel="0" />
+      <plugin id="core.reporting.rap" autoStart="true" startLevel="0" />
+      <plugin id="core.schedulelib" autoStart="true" startLevel="0" />
+      <plugin id="core.scheduleservice" autoStart="true" startLevel="0" />
+      <plugin id="core.search" autoStart="true" startLevel="0" />
+      <plugin id="core.search.form" autoStart="true" startLevel="0" />
+      <plugin id="core.service" autoStart="true" startLevel="0" />
+      <plugin id="core.treebrowser" autoStart="true" startLevel="0" />
+      <plugin id="core.ui" autoStart="true" startLevel="0" />
+      <plugin id="core.webloader" autoStart="true" startLevel="0" />
+      <plugin id="core.webservice" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.commands" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.contenttype" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding.observable" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding.property" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.expressions" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.jobs" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.app" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.http.registry" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.http.servlet" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.http.servletbridge" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.preferences" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.registry" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.servletbridge" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.help" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.osgi.services" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.design.example" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.draw2d" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.draw2d.compatibility" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.gef" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.jface" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.jface.databinding" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.rwt" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.rwt.osgi" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.rwt.supplemental.filedialog" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.rwt.supplemental.fileupload" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.ui" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.ui.cheatsheets" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.ui.forms" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.ui.views" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.rap.ui.workbench" autoStart="true" startLevel="0" />
+   </configurations>
+
+   <warConfiguration webXml="/core.webloader/WEB-INF/web.xml" launchIni="/core.webloader/WEB-INF/launch.ini">
+   <libraries>
+      <library path="org.eclipse.equinox.servletbridge_1.2.200.v20120522-2049.jar" fromTarget="true"/>
+   </libraries>
+   </warConfiguration>
+</product>

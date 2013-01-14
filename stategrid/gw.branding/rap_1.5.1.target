@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="RAP 1.5.1" sequenceNumber="18">
+<locations>
+<location path="E:\java\gef_rap" type="Directory"/>
+<location path="E:\java\rap-runtime-1.5.1-R-20120917-1116" type="Directory"/>
+<location path="E:\java\BabelLanguagePack-rt.rap-zh_3.7.0.v20120721081147\eclipse" type="Directory"/>
+</locations>
+<environment>
+<os>win32</os>
+<ws>win32</ws>
+<arch>x86</arch>
+<nl>zh_CN</nl>
+</environment>
+<launcherArgs>
+<vmArgs>-Dosgi.noShutdown=true -Declipse.ignoreApp=true</vmArgs>
+<programArgs>-console -consolelog</programArgs>
+</launcherArgs>
+</target>
