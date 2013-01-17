@@ -22,6 +22,7 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Dialog;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Link;
 import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
@@ -134,39 +135,52 @@ public class GWLoginDlg extends Dialog implements IRunnableWithProgress {
 		logo.pack();
 
 		Label title = new Label(container, SWT.NONE);
-		title.setLocation(240, 100);
+		title.setLocation(260, 130);
 		title.setImage(ImageHelper.LoadImage(Activator.PLUGIN_ID,
 				"/html/login_title.png"));
 		title.pack();
 
-		Label info = new Label(container, SWT.NONE);
-		info.setLocation(360, 220);
-		info.setText("欢迎登陆，有问题请联系管理员");
-		info.setFont(new Font(Display.getCurrent(), "simsun", 14, SWT.BOLD));
-		info.pack();
+		//Label info = new Label(container, SWT.NONE);
+		//info.setLocation(360, 220);
+		//info.setText("欢迎登陆，有问题请联系管理员");
+		//info.setFont(new Font(Display.getCurrent(), "simsun", 14, SWT.BOLD));
+		//info.pack();
+		
+		Label lblPhone = new Label(container, SWT.NONE);
+		lblPhone.setLocation(35, 280);
+		lblPhone.setText("热线：400-681-2186  91871-2186");
+		lblPhone.setFont(new Font(Display.getCurrent(), "simsun", 12, SWT.NORMAL));
+		lblPhone.pack();
+
+		
+		Label lblEmail = new Label(container, SWT.NONE);
+		lblEmail.setLocation(35, 305);
+		lblEmail.setText("邮箱：92186@sgcc.com.cn");
+		lblEmail.setFont(new Font(Display.getCurrent(), "simsun", 12, SWT.NORMAL));
+		lblEmail.pack();
 
 		cboConnection = new Combo(container, SWT.READ_ONLY);
 		cboConnection.setBounds(80, 10, 257, 20);
 		cboConnection.setVisible(false);
 
 		Label label_1 = new Label(container, SWT.RIGHT);
-		label_1.setBounds(330, 302, 60, 20);
+		label_1.setBounds(330, 282, 60, 20);
 		label_1.setText("\u7528\u6237\u540D\uFF1A");
 
 		username = new Text(container, SWT.BORDER);
-		username.setBounds(400, 300, 200, 20);
+		username.setBounds(400, 280, 200, 20);
 		username.setText(loginId);
 		username.setFocus();
 
 		Label label_2 = new Label(container, SWT.RIGHT);
-		label_2.setBounds(330, 342, 60, 20);
+		label_2.setBounds(330, 322, 60, 20);
 		label_2.setText("\u5BC6   \u7801\uFF1A");
 
 		password = new Text(container, SWT.BORDER | SWT.PASSWORD);
-		password.setBounds(400, 340, 200, 20);
+		password.setBounds(400, 320, 200, 20);
 
 		Composite Comp = new Composite(container, SWT.NONE);
-		Comp.setBounds(300, 375, 300, 30);
+		Comp.setBounds(300, 355, 300, 30);
 		Comp.setBackgroundMode(SWT.INHERIT_DEFAULT);
 
 		btLogin = new Button(Comp, SWT.BORDER);

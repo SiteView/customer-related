@@ -95,7 +95,7 @@ public class busObMenu extends ContributionItem {
 	
 		int miIndex = index;
 		
-		if (curBoName !=null && ! curBoName.equals("")){
+		if (curBoName !=null && ! curBoName.equals("")&& ConnectionBroker.get_SiteviewApi().get_SecurityService().HasBusObRight(curBoName, SecurityRight.Add)){
 			BusinessObjectDef phs = ConnectionBroker.get_SiteviewApi().get_LiveDefinitionLibrary().GetBusinessObjectDef(curBoName);
 			PlaceHolder ph = new PlaceHolder(phs);
 			MenuItem mi = new MenuItem(menu, SWT.PUSH, miIndex++);
