@@ -198,9 +198,9 @@ public class NavigatorView extends ViewPart {
 	        
 	        if (cmddef.get_IsGroup()){
 	        	
-	        	if (cmddef.get_Name().equals("Searches")){
-	        		continue;
-	        	}
+//	        	if (cmddef.get_Name().equals("Searches")){
+//	        		continue;
+//	        	}
 	        	//System.out.println(cmddef.get_Name());
 	            CommandControlGroupDef groupdef = (CommandControlGroupDef)cmddef;
 	            final ExpandItem expandItem = new ExpandItem((ExpandBar) container, SWT.NONE);
@@ -233,22 +233,22 @@ public class NavigatorView extends ViewPart {
 	            	
 	        		continue;
 	        	}
-//	            else if(cmddef.get_Name().equals("Searches")){
-//	            	Composite composite=new Composite(comp1,SWT.NONE);
+	            else if(cmddef.get_Name().equals("Searches")){
+	            	Composite composite=new Composite(comp1,SWT.NONE);
 //	            	SearchNavField searchField=new SearchNavField(composite,expandItem,SWT.NONE);
 //	            	searchField.setLocation(0, 0);
 //	            	searchField.pack();
-//	            	
-//	            	IHistoryFieldEvent ihistoryFieldEvent=new SearchHistoryFieldEvent();//查询的历史数据事件接口实现
-//	            	CommHistoryDataLoad.queryGroupNavComposite=new HistoryNavField(composite,SWT.FLAT,expandItem,HistoryDataType.SEARCH,ihistoryFieldEvent,50);
-//	            	CommHistoryDataLoad.queryGroupNavComposite.setLocation(0,60);
-//	            	CommHistoryDataLoad.queryGroupNavComposite.pack();
-//	            	composite.pack();
-//	            	comp1.pack();
-//	            	comp1.setContent(composite);
-//	            	expandItem.setExpanded(true);
-//	        		continue;
-//	            }
+	            	
+	            	IHistoryFieldEvent ihistoryFieldEvent=new SearchHistoryFieldEvent();//查询的历史数据事件接口实现
+	            	CommHistoryDataLoad.queryGroupNavComposite=new HistoryNavField(composite,SWT.FLAT,expandItem,HistoryDataType.SEARCH,ihistoryFieldEvent,0);
+	            	CommHistoryDataLoad.queryGroupNavComposite.setLocation(0,0);
+	            	CommHistoryDataLoad.queryGroupNavComposite.pack();
+	            	composite.pack();
+	            	comp1.pack();
+	            	comp1.setContent(composite);
+	            	expandItem.setExpanded(true);
+	        		continue;
+	            }
 	            else if(cmddef.get_Name().equals("QuickActions")){
 	            	comp1.setLayout(new FillLayout());
 	            	IHistoryFieldEvent ihistoryFieldEvent= new AutotaskHistoryFieldEvent();

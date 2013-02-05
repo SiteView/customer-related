@@ -134,14 +134,18 @@ TableColumn{
 }
 TableColumn:hover{
 	background-image:url("/html/tablecolumn-bg-hover.png");
+
 }
 
 TableColumn-SortIndicator:down{
-	background-image:url("html/sort_desc_alt.png");
+	background-image:url("/html/sort_desc_alt.png");
 }
 
 TableColumn-SortIndicator:up{
-	background-image:url("html/sort_asc.png");
+	background-image:url("/html/sort_asc.png");
+}
+Table-GridLine:horizontal {
+	color:#e0e3e9;
 }
 
 ToolTip{

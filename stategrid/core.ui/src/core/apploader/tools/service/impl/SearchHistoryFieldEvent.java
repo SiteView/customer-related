@@ -1,16 +1,20 @@
 package core.apploader.tools.service.impl;
 
+import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PlatformUI;
 
 import core.apploader.tools.service.inter.IHistoryFieldEvent;
+import core.search.form.dialog.SearchParamDialog;
 import core.search.form.editor.SearchResultEditor;
 import core.search.form.editor.input.SearchResultEditorInput;
 
 import system.Collections.ArrayList;
+import Siteview.DefRequest;
 import Siteview.IDefinition;
 import Siteview.MultipleBusObQueryGroupDef;
 import Siteview.QueryGroupDef;
@@ -59,12 +63,26 @@ public class SearchHistoryFieldEvent implements IHistoryFieldEvent{
 				}
 			}
 			else{
-				virtualKeyLists=new VirtualKeyList[1];
-				girdDefs=new GridDef[1];
 				QueryGroupDef queryGroupDef=(QueryGroupDef)idefinition;
 				SiteviewQuery getSiteViewQuery=queryGroupDef.get_SiteviewQuery();
+				
+				if(getSiteViewQuery.get_SearchParameters()!=null&&getSiteViewQuery.get_SearchParameters().get_Count()>0){
+					
+					SearchParamDialog searchParamDialog = new SearchParamDialog(Display.getCurrent().getActiveShell(),queryGroupDef);
+					int result = searchParamDialog.open();
+					if(result != Dialog.OK){
+						return;
+					}
+				}
+				
+				virtualKeyLists=new VirtualKeyList[1];
+				girdDefs=new GridDef[1];
+				
 				virtualKeyLists[0]=new VirtualKeyList(m_api,getSiteViewQuery);
-				girdDefs[0]=m_api.get_Presentation().GetGridDef(getSiteViewQuery.get_BusinessObjectName());
+				girdDefs[0]=(GridDef) m_api.get_LiveDefinitionLibrary().GetDefinition(DefRequest.ById(GridDef.get_ClassName(),queryGroupDef.get_DefaultGridDefId()));
+				if(girdDefs[0]==null){
+					girdDefs[0]=m_api.get_Presentation().GetGridDef(getSiteViewQuery.get_BusinessObjectName());
+				}
 				try{
 					if(virtualKeyLists[0].get_Count()>0){
 						results++;
